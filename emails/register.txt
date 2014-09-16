@@ -1,0 +1,11 @@
+Hi,
+
+Thank you for signing up for agendr.eu, 
+
+Please confirm your email address by clicking the link below.
+
+{url}
+
+Regards,
+
+agendr.eu

@@ -1,0 +1,308 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"total",
+				"milestone_total"
+			],
+			[
+				"ar",
+				"archived"
+			],
+			[
+				"user_new",
+				"user_newpassword_confirm"
+			],
+			[
+				"archiv",
+				"archive_unarchive"
+			],
+			[
+				"label",
+				"label-success"
+			],
+			[
+				"la",
+				"label-warning"
+			],
+			[
+				"NULL",
+				"NULL"
+			],
+			[
+				"p",
+				"current_project"
+			],
+			[
+				"project",
+				"current_project"
+			],
+			[
+				"done",
+				"done"
+			],
+			[
+				"curren",
+				"current_project"
+			],
+			[
+				"project_title",
+				"project_title"
+			],
+			[
+				"data",
+				"data-projectid"
+			],
+			[
+				"e",
+				"echoh	<?php echo htmlentities(…) ?>"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/usr/share/applications/defaults.list",
+		"/usr/share/applications/sublime.desktop",
+		"/run/user/gavin/gvfs/smb-share:server=raspberrypi,share=www/agendr.eu/views/dashboard.view.php",
+		"//192.168.0.20/www/agendr.eu/libs/db.lib.php",
+		"//192.168.0.20/www/agendr.eu/controllers/projects.controller.php",
+		"//192.168.0.20/www/agendr.eu/views/project.ajax.php",
+		"//192.168.0.20/www/agendr.eu/js/dashboard.js",
+		"//192.168.0.20/www/agendr.eu/views/milestone.ajax.php",
+		"//192.168.0.20/www/agendr.eu/libs/functions.lib.php",
+		"//192.168.0.20/www/agendr.eu/libs/constants.lib.php",
+		"//192.168.0.20/www/agendr.eu/libs/framework.lib.php",
+		"//192.168.0.20/www/agendr.eu/index.php",
+		"//192.168.0.20/www/agendr.eu/ajax.php",
+		"//192.168.0.20/www/agendr.eu/views/register.ajax.php",
+		"//192.168.0.20/www/agendr.eu/views/index.view.php",
+		"//192.168.0.20/www/agendr.eu/views/confirm.view.php",
+		"//192.168.0.20/www/agendr.eu/bootstrap/theme/theme-global.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap/less/variables.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap/theme/theme-variables.less",
+		"//192.168.0.20/www/agendr.eu/theme/custom-bootstrap.less",
+		"//192.168.0.20/www/agendr.eu/css/global.css",
+		"//192.168.0.20/www/agendr.eu/bootstrap/theme/theme.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap/theme/theme-flat.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap/less/bootstrap.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap/less/labels-badges.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap/less/navbar.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap/less/buttons.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap/less/mixins.less",
+		"//192.168.0.20/www/agendr.eu/less/theme/custom-variables.less",
+		"//192.168.0.20/www/agendr.eu/less/theme/custom-other.less",
+		"//192.168.0.20/www/agendr.eu/less/theme/custom-bootstrap.less",
+		"//192.168.0.20/www/agendr.eu/less/theme/test.css",
+		"//192.168.0.20/www/agendr.eu/bootstrap/css/bootstrap.min.css",
+		"//192.168.0.20/www/agendr.eu/bootstrap-master/less/variables.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap-master/less/navs.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap-master/less/labels-badges.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap-master/less/buttons.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap-master/less/mixins.less",
+		"//192.168.0.20/www/agendr.eu/bootstrap-master/less/dropdowns.less",
+		"//192.168.0.20/www/agendr.eu/views/dashboard.view.php",
+		"//192.168.0.20/www/agendr.eu/js/archive.js",
+		"//192.168.0.20/www/agendr.eu/js/login.js",
+		"//192.168.0.20/www/agendr.eu/libs/login.lib.php",
+		"//192.168.0.20/www/agendr.eu/libs/mail.lib.php",
+		"//192.168.0.20/www/agendr.eu/js/functions.js",
+		"//192.168.0.20/www/agendr.eu/views/404.view.php",
+		"//192.168.0.20/www/agendr.eu/views/privacy.view.php",
+		"//192.168.0.20/www/agendr.eu/vars/titles.var.php",
+		"//192.168.0.20/www/agendr.eu/js/index.js",
+		"//192.168.0.20/www/agendr.eu/views/forgotten.ajax.php",
+		"//192.168.0.20/www/agendr.eu/controllers/user.controller.php",
+		"//192.168.0.20/www/agendr.eu/views/password.ajax.php",
+		"//192.168.0.20/www/agendr.eu/views/login.ajax.php",
+		"//192.168.0.20/www/agendr.eu/emails/password.txt",
+		"//192.168.0.20/www/agendr.eu/emails/register.txt",
+		"//192.168.0.20/www/whatwhen.eu/js/functions.js",
+		"//192.168.0.20/www/whatwhen.eu/index.php",
+		"//192.168.0.20/www/whatwhen.eu/views/privacy.view.php",
+		"//192.168.0.20/www/whatwhen.eu/views/terms.view.php",
+		"//192.168.0.20/www/whatwhen.eu/views/profile.view.php",
+		"//192.168.0.20/www/whatwhen.eu/views/password.ajax.php",
+		"//192.168.0.20/www/whatwhen.eu/controllers/user.controller.php",
+		"//192.168.0.20/www/whatwhen.eu/views/dashboard.view.php",
+		"//192.168.0.20/www/whatwhen.eu/js/dashboard.js",
+		"//192.168.0.20/www/whatwhen.eu/js/index.js",
+		"//192.168.0.20/www/whatwhen.eu/views/index.view.php",
+		"//192.168.0.20/www/whatwhen.eu/js/login.js",
+		"//192.168.0.20/www/whatwhen.eu/js/archive.js",
+		"//192.168.0.20/www/whatwhen.eu/views/milestone.ajax.php",
+		"//192.168.0.20/www/whatwhen.eu/views/archive.view.php",
+		"//192.168.0.20/www/whatwhen.eu/controllers/profile.controller.php",
+		"//192.168.0.20/www/whatwhen.eu/views/project.ajax.php",
+		"//192.168.0.20/www/whatwhen.eu/controllers/projects.controller.php",
+		"//192.168.0.20/www/whatwhen.eu/libs/db.lib.php",
+		"//192.168.0.20/www/whatwhen.eu/ajax.php",
+		"//192.168.0.20/www/whatwhen.eu/css/global.css",
+		"//192.168.0.20/www/whatwhen.eu/libs/functions.lib.php",
+		"//192.168.0.20/www/whatwhen.eu/libs/login.lib.php",
+		"//192.168.0.20/www/whatwhen.eu/views/404.view.php",
+		"//192.168.0.20/www/whatwhen.eu/emails/password.txt",
+		"//192.168.0.20/www/whatwhen.eu/api.txt",
+		"//192.168.0.20/www/whatwhen.eu/views/register.ajax.php",
+		"//192.168.0.20/www/whatwhen.eu/emails/register.txt",
+		"//192.168.0.20/www/whatwhen.eu/views/login.ajax.php",
+		"//192.168.0.20/www/whatwhen.eu/views/forgotten.ajax.php",
+		"//192.168.0.20/www/whatwhen.eu/config.php",
+		"//192.168.0.20/www/whatwhen.eu/css/media.css",
+		"//192.168.0.20/www/whatwhen.eu/bootstrap-master/less/variables.less",
+		"//192.168.0.20/www/whatwhen.eu/bootstrap-master/less/buttons.less",
+		"/C/Users/chapmaga/Desktop/SimpLESS/Resources/app/3p/less.js",
+		"//192.168.0.20/www/whatwhen.eu/bootstrap-master/less/mixins.less",
+		"//192.168.0.20/www/whatwhen.eu/bootstrap/css/bootstrap.css",
+		"//192.168.0.20/www/whatwhen.eu/css/bootstrap.css",
+		"//192.168.0.20/www/whatwhen.eu/css/responsive-utilities.css",
+		"/C/Program Files/Sublime Text 2/sublime_plugin.py",
+		"/C/Program Files/Sublime Text 2/pyexpat.pyd",
+		"//192.168.0.20/www/whatwhen.eu/whatwhen.sublime-project",
+		"/C/Users/chapmaga/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/chapmaga/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/www/procurve2/us/en/enterprise/servers/integrity/index.aspx"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"gedit.desktop",
+			"fetchRows",
+			"textSha",
+			"padding",
+			"box-sha",
+			"gradien",
+			"button",
+			"border-ra",
+			"tab",
+			"console",
+			"<?",
+			"password",
+			"addMiletsoneModal",
+			"getDashProjects",
+			"<?",
+			"gradient",
+			"Radius",
+			"radius",
+			"btn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sublime.desktop"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 378.0,
+	"status_bar_visible": true
+}

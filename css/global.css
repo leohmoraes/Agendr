@@ -1,0 +1,86 @@
+body{
+	font-weight: 400;
+	font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+}
+
+h1,h2,h3,h4,h5{
+	
+	font-weight: 300;
+}
+
+.project-desc{
+	font-size: 0.75em;
+}
+
+.project-title{
+	font-weight: bold;
+}	
+
+.milestone-title{
+	
+}
+
+.milestone-project{
+	color: #999;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+.milestone-desc{
+
+	font-size: 0.75em;
+}
+
+.hero-text{
+		width: 40%;
+}
+
+
+@media (max-width:979px){
+	.hero-text{
+		width: 100%;
+	}
+}
+
+@media (max-width:480px){
+	.hero-text *{
+		font-size: 1em !important;
+	}
+}
+
+
+.bucket-text{
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.center{
+	text-align: center;
+}
+.price_band{
+	font-size: 1.5em;
+	color: #27ae60;
+	padding: 0;
+}
+
+.price_pm{
+	font-size: 2em;
+	padding: 0.5em 0px 0.5em  0px;
+}
+
+.price_feature{
+	font-size: 1em;
+}
+
+.price_block{
+	position: relative;
+	background-color: #fff
+	box-sizing: border-box;
+	padding: 10px;
+	bottom: 0;
+}
+
+.price_row{
+	position: relative;
+}
