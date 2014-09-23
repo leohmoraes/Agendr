@@ -4,15 +4,18 @@ class ProjectsController{
 
 	private $db;
 
+	//remove HTML tags
 	static function fix_tags(&$item,$key){
 		$item=strip_tags($item);
 	}
 
+	//database connection
 	public function __construct(){
 		global $db_db,$db_server,$db_user,$db_pass;
 		$this->db=new Database($db_db,$db_server,$db_user,$db_pass);	
 	}
 
+	//fetch projects for the dashboard
 	public function getDashProjects($num){
 		$uid=$_SESSION['loggedin'];
 		
@@ -21,6 +24,7 @@ class ProjectsController{
 
 	}
 
+	//fetch a single project
 	public function getProject($id){
 		$uid=$_SESSION['loggedin'];
 		
@@ -29,6 +33,7 @@ class ProjectsController{
 		return $this->db->fetchRow("what_projects",$projobj,"*");
 	}
 
+	//fetch all projects for the user
 	public function getProjects($start,$num){
 		$uid=$_SESSION['loggedin'];
 		
@@ -37,6 +42,7 @@ class ProjectsController{
 		return $this->db->fetchRows("what_projects",$projobj,"project_id,project_title,project_due,project_desc,project_start,project_done",$start,$num,"project_due ASC");
 	}	
 	
+	//fetch the number of projects for a user
 	public function getNumProjects($done=0){
 		$uid=$_SESSION['loggedin'];
 		
@@ -45,6 +51,7 @@ class ProjectsController{
 		return $this->db->fetchRow("what_projects",$projobj,"COUNT(project_id) AS project_count");
 	}
 
+	//fetch all milestones for a project
 	public function getMilestones($proj){
 		$uid=$_SESSION['loggedin'];
 		
@@ -53,6 +60,7 @@ class ProjectsController{
 		return $this->db->fetchRows("what_milestones",$projobj,"milestone_id,milestone_id,milestone_title,what_milestones.project_id,milestone_due,project_title,milestone_done",0,NULL,"milestone_due ASC","what_projects","project_id");
 	}
 
+	//fetch number of milestones for a project
 	public function getNumMilestones($proj=NULL,$archived=NULL,$done=NULL){
 		$uid=$_SESSION['loggedin'];
 		
@@ -69,7 +77,7 @@ class ProjectsController{
 		return $this->db->fetchRow("what_milestones",$projobj,"COUNT(milestone_id) AS milestone_total");
 	}
 
-	
+	//fetch a single milestone
 	public function getMilestone($id){
 		$uid=$_SESSION['loggedin'];
 		
@@ -78,6 +86,7 @@ class ProjectsController{
 		return $this->db->fetchRow("what_milestones",$projobj,"*");
 	}
 
+	//fetch all dashboard milestones
 	public function getDashMilestones($start,$limit){
 		$uid=$_SESSION['loggedin'];
 		
@@ -86,6 +95,8 @@ class ProjectsController{
 
 	}
 
+	//create a new project in the database
+	//I should probably build language files too for errors
 	public function addProject($object){
 		array_walk($object,"ProjectsController::fix_tags");
 
@@ -102,11 +113,13 @@ class ProjectsController{
 		
 	}
 
+	//add a milestone for a project
 	public function addMilestone($object){
 		array_walk($object,"ProjectsController::fix_tags");
 		return $this->db->insertQuery("what_milestones",$object);
 	}
 
+	//update a project with new data
 	public function updateProject($proj_id,$object){
 		$variables=array(
 			"user_id"=>$_SESSION['loggedin'],
@@ -116,6 +129,7 @@ class ProjectsController{
 		return $this->db->updateQuery("what_projects",$object,$variables);
 	}
 
+	//update a milestone with new data
 	public function updateMilestone($id,$object){
 		$variables=array(
 			"user_id"=>$_SESSION['loggedin'],
@@ -125,6 +139,7 @@ class ProjectsController{
 		return $this->db->updateQuery("what_milestones",$object,$variables);
 	}
 
+	//updates all project milestones
 	public function updateProjectMilestones($proj_id,$object){
 		$variables=array(
 			"user_id"=>$_SESSION['loggedin'],
@@ -134,6 +149,8 @@ class ProjectsController{
 		return $this->db->updateQuery("what_milestones",$object,$variables);
 
 	}	
+
+	//deletes a project + milestones
 	public function deleteProject($proj_id){
 		$variables=array(
 			"user_id"=>$_SESSION['loggedin'],
@@ -148,6 +165,8 @@ class ProjectsController{
 		return $projectsok&$milestonesok;
 
 	}
+
+	//deletes a milestone
 	public function deleteMilestone($proj_id){
 		$variables=array(
 			"user_id"=>$_SESSION['loggedin'],

@@ -6,7 +6,8 @@ class UserController{
 
 	private $db;
 	private $mailer;
-
+	
+	//used to sanitize data and remove HTML tags
 	static function fix_tags(&$item,$key){
 		$item=strip_tags($item);
 	}
@@ -57,7 +58,8 @@ class UserController{
 		}
 		return $returnobj;
 	}
-
+	
+	//change a password for the user
 	public function changePassword($password,$newpassword){
 		$userobj=array(
 			'user_id'=>$_SESSION['loggedin']
