@@ -17,9 +17,9 @@
     text-align: center;
   }
 </style>
-<div class="alert">
+<!-- div class="alert">
         IMPORTANT - THIS SITE WILL CLOSE ON MARCH 31st 2014 YOUR DATA AND USER ACCOUNT WILL BE DELETED
-</div>
+</div -->
 
 <div class="alert alert-info alert-block hide" id="alert_noprojects"><a href="#" class="close" data-dismiss="alert">&times;</a><p>Thank you for registering with agendr.eu.</p><p>You have no projects, you can add one using the +Project button</p></div>
 <div class="row-fluid">

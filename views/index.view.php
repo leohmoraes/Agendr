@@ -9,7 +9,7 @@
 
 </style>
 <div class="container">
-	<div class="alert">NOTE: Site is for demonstration purposes, data may be deleted, site is not encrypted.</div>
+	<!-- div class="alert">NOTE: Site is for demonstration purposes, data may be deleted, site is not encrypted.</div -->
 	<div class="navbar">
 		<div class="navbar-inner"> <a class="mainbrand brand" href="\"><span class='brandcol1'>agend</span><span class='brandcol2'>r</span></a>
 			<ul class="nav pull-right">

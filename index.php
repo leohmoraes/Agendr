@@ -1,36 +1,40 @@
 <?php
-        session_start();
+    session_start();
+	date_default_timezone_set('America/Sao_Paulo'); 
+
         //session_regenerate_id(true);
-        error_reporting(E_ALL);
+    error_reporting(E_ALL);
 	ini_set("display_errors","true");
-
 	include("libs/framework.lib.php");
-
 	include("vars/titles.var.php");
 
-	
-	$p=explode("&",$_SERVER['QUERY_STRING']);
-	$p[0]=trim($p[0],'/');
-	if($p[0])
+	// if (isset($_SERVER["QUERY_STRING"]))
+	//$p= @explode("&",$_SERVER['QUERY_STRING']);
+	$p= @explode("/",$_SERVER["REQUEST_URI"]);
+
+	//$p[0]=trim($p[0],'/');
+	if(isset($p[1]))
 	{
-		$v="views/".$p[0].".view.php";
+		$v="views/".$p[1].".view.php";
 		if(!file_exists($v))
 		{
-			header("HTTP/1.0 404 Not Found");
-			$v="views/404.view.php";
-		}
+			//header("HTTP/1.0 404 Not Found");
+			//$v="views/404.view.php";
+			$v="views/index.view.php";
+		} 
 	}
 	else
 	{
-		
 		$v="views/index.view.php";
 	}
-	if(isset($titles[$p[0]])){
-		$page_title=$titles[$p[0]];
+	if(isset($titles[$p[1]])){
+		$page_title=$titles[$p[1]];
 	}
 	else
 		$page_title=$titles['index'];
-	$_SESSION['pageid']=$p[0];
+		
+	$_SESSION['pageid']=$p[1];
+
 ?>
 <!DOCTYPE html>
 <html>
